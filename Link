@@ -64,3 +64,172 @@ Fast-forward
 
 admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
 $
+
+
+
+
+
+Git PUSH :
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject
+$ git init
+Initialized empty Git repository in C:/Maven/mavenproject/.git/
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git add .
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git commit -m 'hello'
+[master (root-commit) 3d5ab82] hello
+ 7 files changed, 98 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .settings/org.eclipse.m2e.core.prefs
+ create mode 100644 pom.xml
+ create mode 100644 src/main/webapp/WEB-INF/web.xml
+ create mode 100644 src/main/webapp/index.jsp
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git push set git push set
+error: src refspec git does not match any.
+error: src refspec push does not match any.
+error: src refspec set does not match any.
+error: failed to push some refs to 'set'
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git push set
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream set master
+
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ ^C
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$  git push --set-upstream set master
+fatal: 'set' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git push 2~https://github.com/arumitab/mavenproject.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream 2~https://github.com/arumitab/mavenproject.git master
+
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git push https://github.com/arumitab/mavenproject.git
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/arumitab/mavenproject.git master
+
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$   git push --set-upstream https://github.com/arumitab/mavenproject.git master
+
+To https://github.com/arumitab/mavenproject.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/arumitab/mavenproject.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git clone   git push --set-upstream https://github.com/arumitab/mavenproject.git master
+error: unknown option `set-upstream'
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ git clone https://github.com/arumitab/mavenproject.git
+Cloning into 'mavenproject'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject (master)
+$ cd mavenproject/
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject/mavenproject (master)
+$ git add .
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject/mavenproject (master)
+$ git commit -m 'pushed'
+[master 992317f] pushed
+ 7 files changed, 98 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 .settings/org.eclipse.m2e.core.prefs
+ create mode 100644 pom.xml
+ create mode 100644 src/main/webapp/WEB-INF/web.xml
+ create mode 100644 src/main/webapp/index.jsp
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject/mavenproject (master)
+$ git push
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (14/14), 1.97 KiB | 1009.00 KiB/s, done.
+Total 14 (delta 0), reused 0 (delta 0)
+To https://github.com/arumitab/mavenproject.git
+   643e83d..992317f  master -> master
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Maven/mavenproject/mavenproject (master)
+$ ^C
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/Ma
