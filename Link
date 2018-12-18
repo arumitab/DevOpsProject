@@ -2,6 +2,9 @@ https://maven.apache.org/download.cgi
 M2 - %M2_HOME%\bin 
 https://mvnrepository.com/ - (to download dependencies)
 
+https://github.com/neerajk555/MavenProject.git
+
+
 git clone 'link'
 admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
 $ git add .
