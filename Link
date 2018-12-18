@@ -1,3 +1,63 @@
 https://maven.apache.org/download.cgi
 M2 - %M2_HOME%\bin 
 https://mvnrepository.com/ - (to download dependencies)
+
+git clone 'link'
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git add .
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git commit -m 'updated new files'
+[master 3330bd7] updated new files
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Resume.txt
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git push
+remote: Permission to arumitab/DevOpsProjectone.git denied to karan1507.
+fatal: unable to access 'https://github.com/arumitab/DevOpsProjectone.git/': The requested URL returned error: 403
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git config --global user.name arumitab
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git config --global user.email "arumita.bose@gmail.com"
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git push https://github.com/arumitab/DevOpsProjectone.git
+remote: Permission to arumitab/DevOpsProjectone.git denied to karan1507.
+fatal: unable to access 'https://github.com/arumitab/DevOpsProjectone.git/': The requested URL returned error: 403
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git config --global user.email "arumita.bose@gmail.com"
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git config --global user.name arumitab
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git push https://github.com/arumitab/DevOpsProjectone.git
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/arumitab/DevOpsProjectone.git
+   dfcde6a..3330bd7  master -> master
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/arumitab/DevOpsProjectone
+   dfcde6a..acce99b  master     -> origin/master
+Updating 3330bd7..acce99b
+Fast-forward
+ Resume.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+admin 413@DESKTOP-RAOINL0 MINGW64 /c/ArumitaProject/DevOpsProjectone (master)
+$
