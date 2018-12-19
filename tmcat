@@ -1,0 +1,46 @@
+download - 1st zip in core - https://tomcat.apache.org/download-80.cgi
+unzip
+
+also in jenkins download deploy to container, copy artifacts
+
+C:\Users\admin 413>cd C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin
+
+C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin>startup
+Using CATALINA_BASE:   "C:\Users\admin 413\Downloads\apache-tomcat-8.5.35"
+Using CATALINA_HOME:   "C:\Users\admin 413\Downloads\apache-tomcat-8.5.35"
+Using CATALINA_TMPDIR: "C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\temp"
+Using JRE_HOME:        "C:\Program Files\Java\jdk1.8.0_192"
+Using CLASSPATH:       "C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin\bootstrap.jar;C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin\tomcat-juli.jar"
+//cross extra tab
+Then:
+C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin>shutdown
+
+
+Go to tomcat->conf->users-> at end edit from --> to --> and paste below: 
+<role rolename="manager-script"/>
+
+  <role rolename="manager-gui"/>
+
+  <role rolename="admin-gui"/>
+
+  <user username="tomcat" password="tomcat" roles="manager-script,admin-gui,manager-gui"/>
+  
+  
+  Go to conf->catalina->localhost->create manager.xml file and in the file paste below:
+  <?xml version="1.0" encoding="UTF-8"?>
+
+<Context privileged="true" antiResourceLocking="false"   
+
+         docBase="${catalina.home}/webapps/manager"> 
+
+             <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="^.*$" /> 
+
+</Context>
+
+
+again: in command prompt
+C:\Users\admin 413\Downloads\apache-tomcat-8.5.35\bin>startup
+
+Go to 'http://localhost:8090/'
+
+check http://localhost:8090/webapp
