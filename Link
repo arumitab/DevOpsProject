@@ -1,4 +1,4 @@
-if jenkins corrupted use cd jenkins path and use 'java -jar jenkins.war'
+if jenkins corrupted use cd jenkins path and use 'java -jar jenkins.war'. Seacrh http://localhost:8080/
 
 https://maven.apache.org/download.cgi
 M2 - %M2_HOME%\bin 
