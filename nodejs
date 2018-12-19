@@ -1,0 +1,77 @@
+node -v
+C:\Users\admin 413>npm -v
+6.4.1
+
+C:\Users\admin 413>c:
+
+C:\Users\admin 413>cd c:\
+
+c:\>mkdir nodeprojectnewone
+
+c:\>cd nodeprojectnewone
+
+c:\nodeprojectnewone>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (nodeprojectnewone)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to c:\nodeprojectnewone\package.json:
+
+{
+  "name": "nodeprojectnewone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+c:\nodeprojectnewone>npm install jquery --save //install jquery & made a entry in package.json reg jquery & package-lock is created for server & save for adding in package.json
+c:\nodeprojectnewone>npm install -g @angular/cli //g is for global
+c:\nodeprojectnewone>ng new angularprod //creating project
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS
+  SCSS   [ http://sass-lang.com   ]
+  SASS   [ http://sass-lang.com   ]
+  LESS   [ http://lesscss.org     ]
+  Stylus [ http://stylus-lang.com ]
+  
+  c:\nodeprojectnewone>cd angularprod
+
+c:\nodeprojectnewone\angularprod>ng serve
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+
+Date: 2018-12-19T05:15:31.115Z
+Hash: c32e14a9f816d8670b3c
+Time: 15904ms
+chunk {main} main.js, main.js.map (main) 11.5 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 223 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 16.3 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.67 MB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+-> Then open 'Localhost:4200'
+
